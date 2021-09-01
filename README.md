@@ -1,11 +1,8 @@
 # TaxoRef
-Embeddings Evaluation for AI-drivenTaxonomy Refinement
-Malandri, L., Mercorio, F., Mezzanzanica, M., & Nobani, N. TaxoRef: Embeddings Evaluation for AI-driven Taxonomy Refinement.
 
-This repository implements the taxonomy refinement phase developed in the following article:
+This repository implements the taxonomy refinement developed in the following article:
 "TaxoRef: Embeddings Evaluation for AI-drivenTaxonomy Refinement"
 Malandri, L., Mercorio, F., Mezzanzanica, M., & Nobani, N.
-
 
 The notebook TaxoRef.ipynb contains the code, complete and commented.
 
