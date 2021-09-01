@@ -27,6 +27,25 @@ In our case, it has been used in the Labour Market domain to propose a refinemen
 
 # Quick start
 
-The notebook TaxoRef.ipynb contains the code, complete and commented.
+The notebook TaxoRef.ipynb contains the code, complete and commented. You just need to clone this repository and run the notebook TaxoRef.ipynb.
 
 The embedding generation and selection phase, thorougly described in the article, is not included, because it can be built with any pair corpus-taxonomy following the description in the paper.
+
+## Step1: data preprocessing
+
+The vector model and the taxonomic groups, together with their belonging group in ESCO, denominated as IscoGroup, are imported. A new table is created a row for each taxonomic terms in the embeddings vocaboulary. The other columns are, in order, the *"IscoGroup"*, the *"word vector"* and the *"sample"* column, a representation that we will use as input for the refinement, obtained concatenating the vector representation of the term with its class (IscoGroup).
+
+![image](https://user-images.githubusercontent.com/86835945/131698311-e7cabdf6-5a0a-4ded-8cd9-132cc285d4eb.png)
+
+## Step2: Refinement
+
+We perform the refinement by computing class probability through bayes formula and we produce a table comparing the origin class (the one in ESCo) and the destination one (the one with highest class probability, i.e. the TaxoRef suggestion)
+
+![image](https://user-images.githubusercontent.com/86835945/131704513-cd599a3a-cc3f-4588-98f6-f11e2187fef2.png)
+
+## Step3: Example of Refinement 
+
+In this sectionwe select a single ESCO group to better observe the refinement suggested by taxoref:
+
+![image](https://user-images.githubusercontent.com/86835945/131701818-45c6889e-f4c2-4392-8b4c-bd189565193c.png)
+
